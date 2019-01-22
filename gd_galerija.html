@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Noslēguma darbs - Galerija</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="gd_kopejais.css">
+  <link rel="stylesheet" href="gd_galerija.css">
+  <link rel="stylesheet" href="bootstrap-lightbox.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand">Šo uzbūra Anrijs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="gd_sakumlapa.html">Sākumlapa</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Galerija<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gd_vieta.html">Vieta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gd_spele.html">Spēle</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!--Thumbnail start-->
+  <div class="container-fluid" style="height: 600px; width: 600px; overflow: hidden">
+    <div class="row">
+      <div class="col text-center">
+        <img src="a1.jpg" onclick="openModal();Slide(1)" class="img-thumbnail">
+      </div>
+      <div class="col text-center">
+        <img src="a2.jpg" class="img-thumbnail" onclick="openModal();Slide(2)">
+      </div>
+      <div class="col text-center">
+        <img src="a3.jpg" onclick="openModal();Slide(3)" class="img-thumbnail">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <img src="a4.jpg" onclick="openModal();Slide(4)" class="img-thumbnail">
+      </div>
+      <div class="col text-center">
+        <img src="a5.jpg" onclick="openModal();Slide(5)" class="img-thumbnail">
+      </div>
+      <div class="col text-center">
+        <img src="a6.jpg" onclick="openModal();Slide(6)" class="img-thumbnail">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <img src="a7.jpg" onclick="openModal();Slide(7)" class="img-thumbnail">
+      </div>
+      <div class="col text-center">
+        <img src="a8.jpg" onclick="openModal();Slide(8)" class="img-thumbnail">
+      </div>
+      <div class="col text-center">
+        <img src="a9.jpg" onclick="openModal();Slide(9)" class="img-thumbnail">
+      </div>
+    </div>
+  </div>
+  <!--Thumbnail end-->
+  <!--Lightbox start-->
+  <div id="myModal" class="modal container-fluid">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="a1.jpg" style="width:100%;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="a2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="a3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="a4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="a5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="a6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="a7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="a8.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="a9.jpg" style="width:100%">
+      </div>
+
+      <!-- Bultiņas -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Izvēlne -->
+      <div class="row0">
+        <div class="column">
+          <img class="demo" src="a1.jpg" onclick="Slide(1)" alt="Kijevas metro : stacija Дніпро">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="a2.jpg" onclick="Slide(2)" alt="12.maršruta tramvajs mežā pie Пуща-Водиця, Kijeva">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="a3.jpg" onclick="Slide(3)" alt="Kijevas metro : stacija Чернігівська">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="a4.jpg" onclick="Slide(4)" alt="Skats uz Onorē de Balzaka ielu, Троєщина, Kijeva">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="a5.jpg" onclick="Slide(5)" alt="Piemineklis strādniekiem un nepabeigtā stacijas ēka, Дарниця, Kijeva">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="a6.jpg" onclick="Slide(6)" alt="4.maršruta tramvajs pienāk stacijā Троєщина-2, Kijeva">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="a7.jpg" onclick="Slide(7)" alt="Jaunais mikrorajons Позняки, Kijeva">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="a8.jpg" onclick="Slide(8)" alt="Skvērs mikrorajona dienvidos, Троєщина, Kijeva">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="a9.jpg" onclick="Slide(9)" alt="Trolejbuss Vladimira Majakovska ielā, Троєщина, Kijeva">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Lightbox end-->
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">© Anrijs Paulis Krastiņš, 2018</span>
+    </div>
+  </footer>
+  <script src="gd_script_lightbox.js"></script>
+</body>
+
+</html>

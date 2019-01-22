@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Noslēguma darbs - Spēle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="gd_kopejais.css">
+    <link rel="stylesheet" href="gd_spele.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand">Šo uzbūra Anrijs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="gd_sakumlapa.html">Sākumlapa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gd_galerija.html">Galerija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gd_vieta.html">Vieta</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Spēle<span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" style="height: 600px; width: 600px; overflow: hidden; background: white; padding-top: 15px; padding-left: 0; border: 10px solid white; border-radius: 4px;">
+    <button id="start" onclick="startGame()">Sākt</button>
+    <button id="pause" onclick="pauseGame()" style="display:none;">Apturēt</button>
+    <button id="resume" onclick="continueGame()" style="display:none;">Turpināt</button>
+    <input id="name" type="text" placeholder="Vārds" style="display:none;"></input>
+    <button id="saveRes" onclick="saveResult()" style="display:none;">Saglabāt rezultātu</button>
+
+    <h4>Rezultāts:
+        <span id="score"></span>
+    </h4>
+    <h4>Atlikušais laiks:
+        <span id="remTime"></span>
+    </h4>
+    <div id="gamefield">
+        <div id="cover"></div>
+
+    </div>
+    
+</div>
+
+    <script src="gd_spele.js"></script>
+</body>
+
+</html>

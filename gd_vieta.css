@@ -1,0 +1,27 @@
+#form{
+    display: none;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    background: white;
+    border-radius: 4px;
+    opacity: 0.9;
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+#success{
+    display: none;
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    background: green;
+    border-radius: 4px;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 40px;
+    margin: auto;
+  width: 100%;
+    
+}
