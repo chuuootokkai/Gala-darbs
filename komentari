@@ -1,0 +1,4 @@
+Gala darbs - mājaslapa ar dažādām funkcijām
+Lai atvērtu, iesaku izmantot gd_sakumlapa.html, no kuras tālāk iespējams piekļūt pārējām sadaļām
+Darbā izmantots HTML, CSS, JavaScript, vizuālā identitāte veidota ar Bootstrap 4.1.3 ar manis veidotām modifikācijām
+Izmantota video ievietošana (embed), Bootstrap grid sistēma, attēlu izvietošana, lightbox, slider, Google Maps API, ievades forma
